@@ -15,8 +15,8 @@
 	<artifactId>oss-spring-boot-starter</artifactId>
 	<version>1.0.0</version>
 
-	<name>httpclient</name>
-	<url>https://github.com/seepine/httpclient</url>
+	<name>oss-spring-boot-starter</name>
+	<url>https://github.com/seepine/oss-spring-boot-starter</url>
 	<description>httpclient thread pool project,can get httpUtil of get,post,put,delete and download.</description>
 	<!--author-->
 	<developers>
@@ -38,23 +38,16 @@
 	<!--scm-->
 	<scm>
 		<url>http://seepine.com</url>
-		<connection>scm:git:https://github.com/seepine/httpclient.git</connection>
-		<developerConnection>scm:git:https://github.com/seepine/httpclient.git</developerConnection>
+		<connection>scm:git:https://github.com/seepine/oss-spring-boot-starter.git</connection>
+		<developerConnection>scm:git:https://github.com/seepine/oss-spring-boot-starter.git</developerConnection>
 	</scm>
-
 	<properties>
 		<java.version>1.8</java.version>
-		<hutool.version>5.3.9</hutool.version>
 		<spring.checkstyle.plugin>0.0.22</spring.checkstyle.plugin>
 		<cos_api.version>5.6.24</cos_api.version>
 	</properties>
 
 	<dependencies>
-		<dependency>
-			<groupId>cn.hutool</groupId>
-			<artifactId>hutool-all</artifactId>
-			<version>${hutool.version}</version>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -76,6 +69,11 @@
 			<groupId>com.qcloud</groupId>
 			<artifactId>cos_api</artifactId>
 			<version>${cos_api.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.seepine</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 	</dependencies>
 	<build>

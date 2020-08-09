@@ -10,11 +10,11 @@ import java.io.InputStream;
  */
 @Data
 public class OssObject {
-    private final HttpRequestBase httpRequest;
-    private final InputStream in;
+	private final HttpRequestBase httpRequest;
+	private final InputStream in;
 
-    public OssObject(InputStream in, HttpRequestBase httpRequest) {
-        this.in = in;
-        this.httpRequest = httpRequest;
-    }
+	public OssObject(InputStream in, HttpRequestBase httpRequest) {
+		this.in = in;
+		this.httpRequest = httpRequest;
+	}
 }
